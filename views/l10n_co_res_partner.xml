@@ -74,8 +74,6 @@
                            attrs="{'invisible':[('doctype', '!=', 31)]}"
                            readonly="1" />
                     <field name="dv" invisible="1" />
-                    <field name="x_pn_retri" attrs="{'invisible':[('type', '=', 'delivery')]}" />
-                    <field name="ciiu" attrs="{'invisible':[('type', '=', 'delivery')]}" domain="[('type', '=', 'other')]" />
 
                 </xpath>
 
@@ -132,8 +130,6 @@
                            placeholder="Second Last Name"
                            attrs="{'invisible':['|',('personType', '=', 2), ('type', '=', 'delivery')]}"  />
                     <field name="xbirthday" attrs="{'invisible':[('is_company', '=', True)]}" />
-                    <field name="x_pn_retri" attrs="{'invisible':[('type', '=', 'delivery')]}" />
-                    <field name="ciiu" attrs="{'invisible':[('type', '=', 'delivery')]}"  domain="[('type', '=', 'other')]" />
 
                 </field>
                 <field name="website" position="before">

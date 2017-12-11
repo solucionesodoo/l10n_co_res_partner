@@ -83,22 +83,6 @@ class PartnerInfoExtended(models.Model):
         store=True
     )
 
-    # Tributate regime
-    x_pn_retri = fields.Selection(
-        [
-            (6, "Simplified"),
-            (23, "Natural Person"),
-            (7, "Common"),
-            (11, "Great Taxpayer Autorretenedor"),
-            (22, "International"),
-            (25, "Common Autorretenedor"),
-            (24, "Great Contributor")
-        ], "Tax Regime"
-
-    )
-
-    # CIIU - Clasificación Internacional Industrial Uniforme
-    ciiu = fields.Many2one('ciiu', "ISIC Activity")
     personType = fields.Selection(
         [
             (1, "Natural"),
