@@ -230,16 +230,16 @@ class PartnerInfoExtended(models.Model):
                 for item in nameList:
                     if item is not '':
                         formatedList.append(item)
-                self.name = ' ' .join(formatedList).title()
+                self.name = ' ' .join(formatedList).upper()
         else:
             # Some Companies are know for their Brand, which could conflict from the users point of view while
             # searching the company (e.j. o2 = brand, Telefonica = Company)
             if self.companyBrandName is not False:
                 delimiter = ', '
                 company_list = (self.companyBrandName, self.companyName)
-                self.name = delimiter.join(company_list).title()
+                self.name = delimiter.join(company_list).upper()
             else:
-                self.name = self.companyName.title()
+                self.name = self.companyName.upper()
 
     @api.onchange('name')
     def onChangeName(self):
