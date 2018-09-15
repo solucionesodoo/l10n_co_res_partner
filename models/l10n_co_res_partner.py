@@ -211,10 +211,10 @@ class PartnerInfoExtended(models.Model):
 
         # Collecting all names in a field that will be concatenated
         nameList = [
-            self.x_name1.encode(encoding='utf-8').strip(),
-            self.x_name2.encode(encoding='utf-8').strip(),
-            self.x_lastname1.encode(encoding='utf-8').strip(),
-            self.x_lastname2.encode(encoding='utf-8').strip()
+            self.x_name1,
+            self.x_name2,
+            self.x_lastname1,
+            self.x_lastname2
         ]
 
         formatedList = []
