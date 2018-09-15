@@ -476,3 +476,54 @@ class PartnerInfoExtended(models.Model):
         if self.personType is False:
             msg = _('Error! Please select a person type')
             raise exceptions.ValidationError(msg)
+
+    @api.onchange('x_name1')
+    def onChangeNameUpper(self):
+        """
+        Permite que cuando se termine de escribir se pueda pasar el campo
+        x_name1 automaticamente a mayuscula
+        @return: void
+        """
+        if self.x_name1 is not False:
+            self.x_name1 = self.x_name1.upper()
+
+    @api.onchange('x_name2')
+    def onChangeName2Upper(self):
+        """
+        Permite que cuando se termine de escribir se pueda pasar el campo
+        x_name2 automaticamente a mayuscula
+        @return: void
+        """
+        if self.x_name2 is not False:
+            self.x_name2 = self.x_name2.upper()
+
+    @api.onchange('x_lastname1')
+    def onChangeLastNameUpper(self):
+        """
+        Permite que cuando se termine de escribir se pueda pasar el campo
+        x_lastname1 automaticamente a mayuscula
+        @return: void
+        """
+        if self.x_lastname1 is not False:
+            self.x_lastname1 = self.x_lastname1.upper()
+
+
+    @api.onchange('x_lastname2')
+    def onChangeLastName2Upper(self):
+        """
+        Permite que cuando se termine de escribir se pueda pasar el campo
+        x_lastname2 automaticamente a mayuscula
+        @return: void
+        """
+        if self.x_lastname2 is not False:
+            self.x_lastname2 = self.x_lastname2.upper()
+
+    @api.onchange('companyName')
+    def onChangeCompanyNUpper(self):
+        """
+        Permite que cuando se termine de escribir se pueda pasar el campo
+        companyName automaticamente a mayuscula
+        @return: void
+        """
+        if self.companyName is not False:
+            self.companyName = self.companyName.upper()
