@@ -1,7 +1,16 @@
 # -*- coding: utf-8 -*-
 ###############################################################################
 #                                                                             #
-# Copyright (C) 2016  Dominic Krimmer                                         #
+#                                                                             #
+# Part of Odoo. See LICENSE file for full copyright and licensing details.    #
+#                                                                             #
+#                                                                             #
+# Copyright (C) Dominic Krimmer (Plastinorte S.A.S).                          #
+# Author        Dominic Krimmer, dominic.krimmer@gmail.com                    #
+#                                                                             #
+# Co-Authors    Odoo LoCo                                                     #
+#               Localización funcional de Odoo para Colombia                  #
+#                                                                             #
 #                                                                             #
 # This program is free software: you can redistribute it and/or modify        #
 # it under the terms of the GNU Affero General Public License as published by #
