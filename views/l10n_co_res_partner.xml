@@ -27,6 +27,7 @@
                     <field name="country_id" invisible="1"/>
                 </field>
 
+                <xpath expr="//field[@name='vat']" position="replace"/>
 
                 <!-- Dynamic Form which opens when creating a related contact to a company -->
                 <xpath expr="(//field[@name='city'])[4]" position="replace"></xpath>
@@ -90,8 +91,7 @@
 
                 <field name="parent_id" position="before">
                     <h3>
-                        <field
-                                name="name"
+                        <field name="name"
                                 attrs="{'invisible':[('x_name1', '=', ''),('companyName', '=', False)]}"
                                 placeholder="Don't touch! Field will be filled up automatically!" />
                     </h3>
