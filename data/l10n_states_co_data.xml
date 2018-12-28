@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- http://geoportal.dane.gov.co:8084/Divipola/ -->
-<openerp>
+<odoo>
     <!-- States -->
     <data noupdate="1">
+
 
         <record model="res.country.state" id="res_country_state_co_05">
             <field name="name">ANTIOQUIA</field>
@@ -236,4 +237,4 @@
         </record>
 
     </data>
-</openerp>
+</odoo>

@@ -4,6 +4,8 @@
     <!-- States -->
     <data noupdate="1">
 
+
+
         <record model="res.country.state.city" id="res_country_state_co_05001">
             <field name="code">05001</field>
             <field name="name">MEDELLÍN</field>
