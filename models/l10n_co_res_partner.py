@@ -47,6 +47,7 @@ class CountryStateCity(models.Model):
     country_id = fields.Many2one('res.country', 'Country', required=True)
     _order = 'code'
 
+CountryStateCity()
 
 class PartnerInfoExtended(models.Model):
     _name = 'res.partner'
