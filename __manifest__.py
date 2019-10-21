@@ -28,7 +28,7 @@
 {
     'name': 'Colombia - Terceros',
     'category': 'Localization',
-    'version': '11.0',
+    'version': '12.0',
     'author': 'Dominic Krimmer, Plastinorte S.A.S, Odoo LoCo',
     'license': 'AGPL-3',
     'maintainer': 'dominic.krimmer@gmail.com',
