@@ -5,8 +5,6 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.    #
 #                                                                             #
 #                                                                             #
-# Copyright (C) Dominic Krimmer (Plastinorte S.A.S).                          #
-# Author        Dominic Krimmer, dominic.krimmer@gmail.com                    #
 #                                                                             #
 # Co-Authors    Odoo LoCo                                                     #
 #               Localización funcional de Odoo para Colombia                  #
@@ -29,12 +27,12 @@
     'name': 'Colombia - Terceros',
     'category': 'Localization',
     'version': '12.0',
-    'author': 'Dominic Krimmer, Plastinorte S.A.S, Odoo LoCo',
+    'author': 'Odoo LoCo',
     'license': 'AGPL-3',
-    'maintainer': 'dominic.krimmer@gmail.com',
-    'website': 'https://www.plastinorte.com',
+    'maintainer': 'Odoo LoCo',
+    'website': 'https://github.com/odooloco',
     'summary': 'Colombia Terceros: Extended Partner / '
-               'Contact Module - Odoo 11.0',
+               'Contact Module - Odoo 12.0',
     'images': ['images/main_screenshot.png'],
     'depends': [
     ],

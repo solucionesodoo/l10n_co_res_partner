@@ -69,7 +69,9 @@
                     <field name="doctype" attrs="{'invisible':[('type', '=', 'delivery')]}" />
                     <field name="xidentification"
                            placeholder="e.g. 900301230"
-                           attrs="{'invisible':['|','|','|',('doctype', '=', 43), ('doctype', '=', 1), ('doctype', '=', False), ('type', '=', 'delivery')]}" />
+                           attrs="{'invisible':['|','|','|',('doctype', '=', 43), ('doctype', '=', 1), ('doctype', '=', False), ('type', '=', 'delivery')], 'required': [('doctype', 'not in', [1])]}" 
+                          
+                           />
                     <field name="formatedNit"
                            attrs="{'invisible':[('doctype', '!=', 31)]}"
                            readonly="1" />
@@ -103,7 +105,7 @@
                     <field name="doctype" attrs="{'invisible':[('type', '=', 'delivery')], 'required': [('doctype', '=', False)]}" />
                     <field name="xidentification"
                            placeholder="e.g. 900301230"
-                           attrs="{'invisible':['|','|',('doctype', '=', 43), ('doctype', '=', 1), ('doctype', '=', False)]}" />
+                           attrs="{'invisible':['|','|',('doctype', '=', 43), ('doctype', '=', 1), ('doctype', '=', False)], 'required': [('doctype', 'not in', [1])]}" />
                     <field name="formatedNit"
                            attrs="{'invisible':[('doctype', '!=', 31)]}"
                            readonly="1" />
@@ -175,7 +177,10 @@
             <field name="inherit_id" ref="base.res_partner_kanban_view"/>
             <field name="model">res.partner</field>
             <field name="arch" type="xml">
-                <xpath expr='//kanban/templates/t/div/div[2]/ul' position="before">
+
+
+
+                <xpath expr="//kanban[@class='o_res_partner_kanban']/templates/t[@t-name='kanban-box']/div[@class='oe_kanban_global_click o_kanban_record_has_image_fill o_res_partner_kanban']/div[@class='oe_kanban_details']/ul" position="before">
                     <field name="doctype" invisible="1"/>
 
                     <div attrs="{'invisible':[('xidentification', '=', False)]}">
