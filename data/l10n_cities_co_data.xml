@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<openerp>
+<odoo>
     <!-- States -->
-    <data noupdate="0">
-
-
+    <data noupdate="1">
 
         <record model="res.country.state.city" id="res_country_state_co_05001">
             <field name="code">05001</field>
@@ -1189,15 +1187,15 @@
             <field search="[('code','=','CO')]" model="res.country" name="country_id"/>
             <field search="[('code','=','ATL')]" model="res.country.state" name="state_id"/>
         </record>
-
+<!--
         <record model="res.country.state.city" id="res_country_state_co_11001">
             <field name="code">11001</field>
             <field name="name">BOGOTÁ, D.C.</field>
 
             <field search="[('code','=','CO')]" model="res.country" name="country_id"/>
-            <field search="[('code','=','DC')]" model="res.country.state" name="state_id"/>
+            <field search="[('code','=','DC ')]" model="res.country.state" name="state_id"/>
         </record>
-
+-->
         <record model="res.country.state.city" id="res_country_state_co_13001">
             <field name="code">13001</field>
             <field name="name">CARTAGENA</field>
@@ -8823,4 +8821,4 @@
         </record>
 
     </data>
-</openerp>
+</odoo>
